@@ -5,7 +5,11 @@ Repository ini berisikan pembelajaran NodeJS yang dipelajari dari berbagai sumbe
 
 Referensi pembelajaran web :
 1. https://nodejs.org/en/docs/
-2. 
+2. https://expressjs.com/
+3. https://www.npmjs.com/
+4. https://nodemon.io/
+5. https://www.mongodb.com/
+6. https://www.npmjs.com/package/@hapi/joi
 
 Referensi Video Pembelajaran dapat dilihat pada chanel youtube refri rifwan pilih play list lalu Belajar NodeJS
 
