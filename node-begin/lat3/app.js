@@ -1,2 +1,3 @@
 const server = require('./server.js')
-server.startServer()
+const router = require('./router.js')
+server.startServer(router.route)
