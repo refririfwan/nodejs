@@ -10,6 +10,7 @@ Referensi pembelajaran web :
 4. https://nodemon.io/
 5. https://www.mongodb.com/
 6. https://www.npmjs.com/package/@hapi/joi
+7. https://www.mongodb.com/
 
 Referensi Video Pembelajaran dapat dilihat pada chanel youtube refri rifwan pilih play list lalu Belajar NodeJS
 
