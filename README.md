@@ -11,6 +11,7 @@ Referensi pembelajaran web :
 5. https://www.mongodb.com/
 6. https://www.npmjs.com/package/@hapi/joi
 7. https://www.mongodb.com/
+8. https://pugjs.org/api/getting-started.html
 
 Referensi Video Pembelajaran dapat dilihat pada chanel youtube refri rifwan pilih play list lalu Belajar NodeJS
 
