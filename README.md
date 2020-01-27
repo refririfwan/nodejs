@@ -13,6 +13,7 @@ Referensi pembelajaran web :
 7. https://www.mongodb.com/
 8. https://pugjs.org/api/getting-started.html
 9. https://mongoosejs.com/docs/
+10. https://www.npmjs.com/package/body-parser
 
 Referensi Video Pembelajaran dapat dilihat pada chanel youtube refri rifwan pilih play list lalu Belajar NodeJS
 
