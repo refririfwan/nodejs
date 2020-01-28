@@ -32,6 +32,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
+// Set public folder
+app.use(express.static(path.join(__dirname, 'public')))
+
 // Home Route
 app.get('/', function(req, res){
     // let articles = [
@@ -88,6 +91,17 @@ app.post('/articles/add', function(req, res){
         } else {
             res.redirect('/')
         }
+    })
+})
+
+// Get Single Article
+app.get("/article/:id", function(req,res){
+    Article.findById(req.params.id, function(err, article){
+        // console.log(article.title)
+        // return
+        res.render('article', {
+            article:article
+        })
     })
 })
 
