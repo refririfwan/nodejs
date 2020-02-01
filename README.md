@@ -17,6 +17,10 @@ Referensi pembelajaran web :
 11. https://bower.io/
 12. https://getbootstrap.com/docs/4.4/getting-started/introduction/
 13. https://html2jade.org/
+14. https://express-validator.github.io/docs/
+15.  https://github.com/visionmedia/express-messages
+16. https://github.com/jaredhanson/connect-flash
+17. https://github.com/expressjs/session
 
 Referensi Video Pembelajaran dapat dilihat pada chanel youtube refri rifwan pilih play list lalu Belajar NodeJS
 

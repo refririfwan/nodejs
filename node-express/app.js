@@ -1,7 +1,10 @@
 const express = require('express')
 const path = require('path')
 const mongoose = require('mongoose')
-var bodyParser = require('body-parser')
+const bodyParser = require('body-parser')
+const expressValidator =  require('express-validator')
+const flash = require('connect-flash')
+const session = require('express-session')
 
 mongoose.connect('mongodb://localhost/node-express', {useUnifiedTopology: true, useNewUrlParser: true} )
 const db = mongoose.connection
@@ -34,6 +37,21 @@ app.use(bodyParser.json())
 
 // Set public folder
 app.use(express.static(path.join(__dirname, 'public')))
+
+// Express Session Middleware
+app.use(session({
+    secret: 'keyboard cat',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: true }
+}))
+
+// Express Meesages Middleware
+app.use(require('connect-flash')());
+app.use(function (req, res, next) {
+    res.locals.messages = require('express-messages')(req, res);
+    next();
+})
 
 // Home Route
 app.get('/', function(req, res){
