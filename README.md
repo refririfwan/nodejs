@@ -21,6 +21,8 @@ Referensi pembelajaran web :
 15.  https://github.com/visionmedia/express-messages
 16. https://github.com/jaredhanson/connect-flash
 17. https://github.com/expressjs/session
+18. https://sequelize.org/
+19. https://adminlte.io/docs/3.0/
 
 Referensi Video Pembelajaran dapat dilihat pada chanel youtube refri rifwan pilih play list lalu Belajar NodeJS
 
