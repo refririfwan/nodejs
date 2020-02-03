@@ -18,14 +18,14 @@ app.use(serve(__dirname + '/assets'));
 // Views 
 render(app, {
     root: path.join(__dirname, 'views'),
-    layout: 'index',
+    layout: 'layout',
     viewExt: 'html',
     cache: false,
     debug: false
 })
 
 // Routes
-router.get('/', async ctx => {
+router.get('/dashboard', async ctx => {
     await ctx.render('dashboard', {
         title: "Dashboard"
     })
