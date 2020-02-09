@@ -25,6 +25,34 @@ render(app, {
 })
 
 // Routes
+// landing page
+router.get('/', async ctx => {
+    await ctx.render('landing', {
+        title: "Serverless IoT Platform",
+    })
+})
+
+// login
+router.get('/login', async ctx => {
+    await ctx.render('login', {
+        title: "Login",
+    })
+})
+
+// register
+router.get('/register', async ctx => {
+    await ctx.render('register', {
+        title: "Register",
+    })
+})
+
+// forgot password
+router.get('/forgotPassword', async ctx => {
+    await ctx.render('forgotPassword', {
+        title: "Forgot Password",
+    })
+})
+
 // dashboard
 router.get('/dashboard', async ctx => {
     await ctx.render('dashboard', {
