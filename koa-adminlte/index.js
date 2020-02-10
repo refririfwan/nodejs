@@ -5,6 +5,7 @@ const json = require('koa-json')
 const Router = require('koa-router')
 const serve = require('koa-static')
 const path = require('path')
+import mongo from 'koa-mongo'
 
 // Initial Koa and Router
 const app = new Koa()
@@ -13,6 +14,11 @@ const router = new Router()
 // Middleware
 app.use(bodyParser())
 app.use(json())
+app.use(mongo({
+    hots: 'localhost',
+    port: 27017,
+    db: 'koa-adminlte'
+}))
 app.use(serve(__dirname + '/assets'));
 
 // Views 
