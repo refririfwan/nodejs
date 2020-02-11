@@ -4,9 +4,11 @@ const bodyParser = require('koa-body')
 const mongoose = require('mongoose')
 
 const tasks = require('./routes/tasks')
+const devices = require('./routes/devices')
 
 app.use(bodyParser())
 app.use(tasks.routes())
+app.use(devices.routes())
 
 mongoose.connect('mongodb://localhost/koa-api', { useNewUrlParser: true })
 
